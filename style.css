@@ -1,0 +1,132 @@
+/* RESET CSS - Remove estilos padrão dos navegadores */
+/* Seleciona TODOS os elementos da página */
+* {
+    margin: 0;          /* Remove margens padrão */
+    padding: 0;         /* Remove paddings padrão */
+    box-sizing: border-box; /* Inclui padding e border no cálculo de width/height */
+}
+
+/* ESTILOS GERAIS DO CORPO DA PÁGINA */
+body {
+    font-family: 'Arial', sans-serif; /* Define a fonte principal */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Fundo gradiente */
+    min-height: 100vh;               /* Mínimo 100% da altura da tela */
+    display: flex;                   /* Ativa Flexbox */
+    justify-content: center;         /* Centraliza horizontalmente */
+    align-items:center;             /* Centraliza verticalmente */
+    flex-direction: column;
+}
+
+/* CONTAINER PRINCIPAL */
+.container {
+    text-align: center;  /* Centraliza texto */
+    color: white;        /* Cor do texto */
+    margin-top: auto;
+}
+
+/* TÍTULO PRINCIPAL */
+.container h1 {
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    font-size: 2rem;     /* Tamanho da fonte (2x o tamanho padrão) */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Sombra no texto */
+}
+
+/* CALCULADORA */
+.calculadora {
+    background-color: #2c3e50;   /* Cor de fundo azul escuro */
+    border-radius: 15px;         /* Cantos arredondados */
+    padding: 20px;               /* Espaço interno */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3); /* Sombra externa */
+    width: 320px;                /* Largura fixa */
+}
+
+/* DISPLAY (VISOR) */
+.display {
+    width: 100%;            /* Ocupa 100% da largura disponível */
+    height: 60px;           /* Altura fixa */
+    font-size: 2rem;        /* Texto grande */
+    text-align: right;      /* Alinha números à direita */
+    padding: 0 15px;        /* Espaço interno horizontal */
+    margin-bottom: 20px;    /* Espaço abaixo do display */
+    border: none;           /* Remove borda padrão */
+    border-radius: 8px;     /* Cantos arredondados */
+    background-color: #34495e; /* Cor de fundo */
+    color: white;           /* Cor do texto */
+    outline: none;          /* Remove contorno ao focar */
+}
+
+/* TECLADO */
+.teclado {
+    display: grid;                      /* Ativa CSS Grid */
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas de tamanho igual */
+    gap: 10px;                         /* Espaço entre os botões */
+}
+
+/* ESTILOS BASE PARA TODOS OS BOTÕES */
+.btn {
+    height: 60px;           /* Altura fixa */
+    border: none;           /* Remove borda padrão */
+    border-radius: 8px;     /* Cantos arredondados */
+    font-size: 1.2rem;      /* Tamanho da fonte */
+    font-weight: bold;      /* Texto em negrito */
+    cursor: pointer;        /* Muda cursor para mãozinha */
+    transition: all 0.2s ease; /* Transição suave para hover */
+}
+
+/* EFEITO QUANDO PASSAMOS O MOUSE SOBRE QUALQUER BOTÃO */
+.btn:hover {
+    transform: translateY(-2px);       /* Levanta o botão 2px */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Adiciona sombra */
+}
+
+/* EFEITO QUANDO CLICAMOS EM QUALQUER BOTÃO */
+.btn:active {
+    transform: translateY(0);          /* Volta à posição normal */
+}
+
+/* BOTÕES NUMÉRICOS (0-9 e .) */
+.btn-numero {
+    background-color: #ecf0f1; /* Cor de fundo cinza claro */
+    color: #2c3e50;           /* Cor do texto azul escuro */
+}
+
+/* Efeito hover específico para botões numéricos */
+.btn-numero:hover {
+    background-color: #bdc3c7; /* Cor mais escura ao passar mouse */
+}
+
+/* BOTÕES DE OPERADORES (+, -, ×, /) */
+.btn-operador {
+    background-color: #e67e22; /* Cor de fundo laranja */
+    color: white;              /* Texto branco */
+}
+
+.btn-operador:hover {
+    background-color: #d35400; /* Laranja mais escuro ao passar mouse */
+}
+
+/* BOTÃO IGUAL */
+.btn-igual {
+    background-color: #27ae60; /* Cor de fundo verde */
+    color: white;              /* Texto branco */
+}
+
+.btn-igual:hover {
+    background-color: #229954; /* Verde mais escuro ao passar mouse */
+}
+
+/* BOTÃO LIMPAR (C) */
+.btn-limpar {
+    background-color: #e74c3c; /* Cor de fundo vermelho */
+    color: white;              /* Texto branco */
+}
+
+.btn-limpar:hover {
+    background-color: #c0392b; /* Vermelho mais escuro ao passar mouse */
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
