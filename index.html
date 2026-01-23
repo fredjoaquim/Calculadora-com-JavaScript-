@@ -1,3 +1,10 @@
+<!--
+Projeto desenvolvido por Fred Joaquim dos Santos
+Frontend Developer | Fred Joaquim Tech
+GitHub: https://github.com/fredjoaquim
+Ano: 2025
+-->
+
 <!-- Define que este é um documento HTML5 -->
 <!DOCTYPE html>
 <!-- Inicia o documento HTML com idioma português brasileiro -->
@@ -8,12 +15,6 @@
     <!-- Configura a viewport para responsividade em dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Título que aparece na aba do navegador -->
-     <!-- Favicons -->
-<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-<link rel="manifest" href="assets/site.webmanifest">
-<meta name="theme-color" content="#317EFB">
     <title>Calculadora do Fred</title>
     <!-- Link para o arquivo CSS externo -->
     <link rel="stylesheet" href="style.css">
@@ -22,6 +23,7 @@
 <body>
     <!-- Container principal para centralizar todo o conteúdo -->
     <div class="container">
+        <main class="content">
         <!-- Título principal da página -->
         <h1>Minha Calculadora</h1>
         
@@ -66,20 +68,17 @@
     <button class="btn btn-funcao" onclick="trocarSinal()">±</button>
     <button class="btn btn-igual" onclick="calcular()">=</button>
 </div>
-        </div>
     </div>
+    </main>
 
+     <footer class="footer-minimal">
+            <img src="assets/Logo_Principal_Transparente.png" alt="Fred Joaquim Tech" class="footer-logo">
+            <p>© 2026 Fred Joaquim dos Santos</p>
+        </footer>
+
+    </div>
     <!-- Link para o arquivo JavaScript externo -->
     <!-- Colocado no final para carregar depois do HTML -->
     <script src="script.js"></script>
-
-   <footer class="rodape">
-  <img src="assets/favicon-32x32.png" alt="Logo Fred Joaquim" width="20" height="20">
-  <p>
-    Desenvolvido por <a href="https://github.com/fredjoaquim" target="_blank">Fred Joaquim dos Santos</a> © 2025  
-    <br>📞 (38) 9 9121-6266  
-    <br>📧 <a href="mailto:fredjoaquimprogramador@gmail.com">fredjoaquimprogramador@gmail.com</a>
-  </p>
-</footer>
 </body>
 </html>

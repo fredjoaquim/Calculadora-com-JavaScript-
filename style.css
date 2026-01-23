@@ -3,25 +3,23 @@
 * {
     margin: 0;          /* Remove margens padrão */
     padding: 0;         /* Remove paddings padrão */
-    box-sizing: border-box; /* Inclui padding e border no cálculo de width/height */
-}
+    box-sizing: border-box; /* Inclui padding e border no cálculo de width/height */;
+} 
 
 /* ESTILOS GERAIS DO CORPO DA PÁGINA */
-body {
+.body {
     font-family: 'Arial', sans-serif; /* Define a fonte principal */
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Fundo gradiente */
     min-height: 100vh;               /* Mínimo 100% da altura da tela */
-    display: flex;                   /* Ativa Flexbox */
-    justify-content: center;         /* Centraliza horizontalmente */
-    align-items:center;             /* Centraliza verticalmente */
-    flex-direction: column;
 }
 
 /* CONTAINER PRINCIPAL */
 .container {
     text-align: center;  /* Centraliza texto */
     color: white;        /* Cor do texto */
-    margin-top: auto;
+    min-height: 100vh;               /* Mínimo 100% da altura da tela */
+    display: flex;                   /* Ativa Flexbox */
+    flex-direction: column;
 }
 
 /* TÍTULO PRINCIPAL */
@@ -29,6 +27,16 @@ body {
     margin-bottom: 20px; /* Espaço abaixo do título */
     font-size: 2rem;     /* Tamanho da fonte (2x o tamanho padrão) */
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Sombra no texto */
+}
+
+/*Isso garante:conteúdo SEMPRE centralizado/footer SEMPRE no fundo da tela/nada empurra nada*/
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
 }
 
 /* CALCULADORA */
@@ -125,8 +133,27 @@ body {
     background-color: #c0392b; /* Vermelho mais escuro ao passar mouse */
 }
 
-footer{
-    display: flex;
-    justify-content: center;
-    margin-top: auto;
+.footer-minimal {
+  width: 100%;
+  padding: 20px 0;
+  background: transparent;
+  color: #333;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+
+  font-size: 20px;
+  color: #333;   /* ← MUDE A COR AQUI QUANDO QUISER */
+}
+
+.footer-logo {
+  width: 200px;
+  height: auto;
 }
